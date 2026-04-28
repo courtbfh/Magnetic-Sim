@@ -25,7 +25,7 @@ target_link_libraries(MAGNETIC_SIM
     glad::glad
     ${OpenCV_LIBS}
 )
-file(GLOB SHADERS "shaders/*.glsl")
+file(GLOB SHADERS "shaders/*.glsl") 
 
 target_include_directories(MAGNETIC_SIM PRIVATE include)
 
