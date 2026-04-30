@@ -1,13 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <CustomBuild Include="C:\Users\ordi2430538\Documents\coding_project_flavortown\magnetic-sim\build\CMakeFiles\1d9d792759a2437f79d487e056769949\generate.stamp.rule">
+    <CustomBuild Include="C:\Users\ordi2430538\Documents\coding_project_flavortown\Magnetic-Sim\build\CMakeFiles\554771acd56c725537d2de6bf541bca5\generate.stamp.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="CMake Rules">
-      <UniqueIdentifier>{2DD1DDE8-F046-3491-86F0-CEF6E7D3833A}</UniqueIdentifier>
+      <UniqueIdentifier>{3D84A9CF-3AEA-36C9-9D4F-FBAA6C8040CC}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

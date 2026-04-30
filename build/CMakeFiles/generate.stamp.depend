@@ -38,13 +38,13 @@ C:/Program Files/CMake/share/cmake-4.2/Modules/Platform/Windows-MSVC.cmake
 C:/Program Files/CMake/share/cmake-4.2/Modules/Platform/Windows.cmake
 C:/Program Files/CMake/share/cmake-4.2/Modules/Platform/WindowsPaths.cmake
 C:/Program Files/CMake/share/cmake-4.2/Modules/SelectLibraryConfigurations.cmake
-C:/Users/ordi2430538/Documents/coding_project_flavortown/magnetic-sim/CMakeLists.txt
-C:/Users/ordi2430538/Documents/coding_project_flavortown/magnetic-sim/build/CMakeFiles/4.2.3/CMakeCCompiler.cmake
-C:/Users/ordi2430538/Documents/coding_project_flavortown/magnetic-sim/build/CMakeFiles/4.2.3/CMakeCXXCompiler.cmake
-C:/Users/ordi2430538/Documents/coding_project_flavortown/magnetic-sim/build/CMakeFiles/4.2.3/CMakeRCCompiler.cmake
-C:/Users/ordi2430538/Documents/coding_project_flavortown/magnetic-sim/build/CMakeFiles/4.2.3/CMakeSystem.cmake
-C:/Users/ordi2430538/Documents/coding_project_flavortown/magnetic-sim/shaders/fragment.glsl
-C:/Users/ordi2430538/Documents/coding_project_flavortown/magnetic-sim/shaders/vertex.glsl
+C:/Users/ordi2430538/Documents/coding_project_flavortown/Magnetic-Sim/CMakeLists.txt
+C:/Users/ordi2430538/Documents/coding_project_flavortown/Magnetic-Sim/build/CMakeFiles/4.2.3/CMakeCCompiler.cmake
+C:/Users/ordi2430538/Documents/coding_project_flavortown/Magnetic-Sim/build/CMakeFiles/4.2.3/CMakeCXXCompiler.cmake
+C:/Users/ordi2430538/Documents/coding_project_flavortown/Magnetic-Sim/build/CMakeFiles/4.2.3/CMakeRCCompiler.cmake
+C:/Users/ordi2430538/Documents/coding_project_flavortown/Magnetic-Sim/build/CMakeFiles/4.2.3/CMakeSystem.cmake
+C:/Users/ordi2430538/Documents/coding_project_flavortown/Magnetic-Sim/shaders/fragment.glsl
+C:/Users/ordi2430538/Documents/coding_project_flavortown/Magnetic-Sim/shaders/vertex.glsl
 C:/vcpkg/installed/x64-windows/share/absl/abslConfig.cmake
 C:/vcpkg/installed/x64-windows/share/absl/abslConfigVersion.cmake
 C:/vcpkg/installed/x64-windows/share/absl/abslTargets-debug.cmake

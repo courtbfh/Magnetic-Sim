@@ -1,3 +1,3 @@
-C:/Users/ordi2430538/Documents/coding_project_flavortown/magnetic-sim/build/CMakeFiles/MAGNETIC_SIM.dir
-C:/Users/ordi2430538/Documents/coding_project_flavortown/magnetic-sim/build/CMakeFiles/ALL_BUILD.dir
-C:/Users/ordi2430538/Documents/coding_project_flavortown/magnetic-sim/build/CMakeFiles/ZERO_CHECK.dir
+C:/Users/ordi2430538/Documents/coding_project_flavortown/Magnetic-Sim/build/CMakeFiles/MAGNETIC_SIM.dir
+C:/Users/ordi2430538/Documents/coding_project_flavortown/Magnetic-Sim/build/CMakeFiles/ALL_BUILD.dir
+C:/Users/ordi2430538/Documents/coding_project_flavortown/Magnetic-Sim/build/CMakeFiles/ZERO_CHECK.dir
