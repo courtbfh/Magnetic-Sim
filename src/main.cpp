@@ -13,11 +13,13 @@
 #include <math.h>
 #include <stdlib.h>
 #include <cstdlib>
+#include <winuser.h>
 
 //include our lib 
 
 #include "Particle.hpp"
 #include "MagneticField.hpp"
+
 
 # define M_PI           3.14159265358979323846 
 
@@ -270,6 +272,8 @@ int main(){
     const GLFWvidmode* mode = glfwGetVideoMode(monitor);
 
     GLFWwindow* window = glfwCreateWindow(mode->width, mode->height, "Magnetic-Simulator", NULL, NULL);
+
+    
 
     if (!window)
     {

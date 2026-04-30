@@ -7,27 +7,47 @@
 #define M_PI 3.14159265358979323846 
 
 
-void MagneticField::logNormalization(std::vector<glm::vec4> &points, int n){
-    float sum =0.0f; // log(a*b) = log(a) + log (b)
+// void MagneticField::logNormalization(std::vector<glm::vec4> &points, int n){
+//     float sum =0.0f; // log(a*b) = log(a) + log (b)
 
-    for (int i=0; i<n; i++){
-        if (points[i][3] > 0.0f){
-            sum += log(points[i][3]);
-        } else {
-            sum += log(0.0001f);
-        };
-    };
+//     for (int i=0; i<n; i++){
+//         if (points[i][3] > 0.0f){
+//             sum += log(points[i][3]);
+//         } else {
+//             sum += log(0.0001f);
+//         };
+//     };
 
-    // std::cout << sum << '\n';
-    for (int i=0; i<n; i++){
-        if (points[i][3] > 0.0f){
-            points[i][3] = abs((log(abs(points[i][3])))/(log(abs(sum)))+1);
-        }else {
-            points[i][3] = abs((log(0.0001f))/(log(abs(sum)))+1);
-        };
-        // std::cout << points[i][3] << '\n';
-    };
-};
+//     // std::cout << sum << '\n';
+//     for (int i=0; i<n; i++){
+//         if (points[i][3] > 0.0f){
+//             points[i][3] = abs((log(abs(points[i][3])))/(log(abs(sum)))+1);
+//         }else {
+//             points[i][3] = abs((log(0.0001f))/(log(abs(sum)))+1);
+//         };
+//         // std::cout << points[i][3] << '\n';
+//     };
+// };
+
+void MagneticField::logNormalization(std::vector<glm::vec4> &points, int n) {
+    float minLog = 1e10f;
+    float maxLog = -1e10f;
+
+    // 1. Find the range in log space
+    for (int i = 0; i < n; i++) {
+        float val = std::max(points[i][3], 0.0001f);
+        float l = log(val);
+        if (l < minLog) minLog = l;
+        if (l > maxLog) maxLog = l;
+    }
+
+    // 2. Map to [0, 1] for the color gradient
+    float range = maxLog - minLog;
+    for (int i = 0; i < n; i++) {
+        float l = log(std::max(points[i][3], 0.0001f));
+        points[i][3] = (l - minLog) / (range > 0 ? range : 1.0f);
+    }
+}
 
 glm::vec3 MagneticField::toColorGradient(float value, char gradient){
     glm::vec3 color;
@@ -41,7 +61,7 @@ glm::vec3 MagneticField::toColorGradient(float value, char gradient){
 float MagneticField::computeParticleMagnetic(glm::vec3 position){
     //Let firstly represent only the magnetic Strength without the materials propriety
 
-    float permeability = 4 *  M_PI * pow(10,-7);
+    float permeability = 4 *  M_PI * pow(10,-3);
     float magneticMoment = 1.2f; // 1.2 Am^2 .
 
     //Compute the magnetic Strength in a point
