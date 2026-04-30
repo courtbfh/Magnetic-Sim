@@ -3,7 +3,13 @@ out vec4 FragColor;
 
 uniform vec4 fColor;
 
+
+in vec4 position;
+in vec3 aColor;
+
 void main()
-{
-    FragColor = fColor;
+{   
+    FragColor = vec4(aColor,1.0f);
+    //FragColor = fColor;
+
 } 

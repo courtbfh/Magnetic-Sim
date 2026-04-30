@@ -422,6 +422,8 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="C:\Users\ordi2430538\Documents\coding_project_flavortown\magnetic-sim\src\main.cpp" />
+    <ClCompile Include="C:\Users\ordi2430538\Documents\coding_project_flavortown\magnetic-sim\src\Particle.cpp" />
+    <ClCompile Include="C:\Users\ordi2430538\Documents\coding_project_flavortown\magnetic-sim\src\MagneticField.cpp" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>

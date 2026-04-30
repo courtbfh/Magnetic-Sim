@@ -16,6 +16,8 @@ find_package(OpenCV REQUIRED)
 
 add_executable(MAGNETIC_SIM
     src/main.cpp
+    src/Particle.cpp
+    src/MagneticField.cpp
 
 )
 

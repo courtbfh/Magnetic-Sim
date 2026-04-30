@@ -1,0 +1,11 @@
+================================================================================
+Linker Errors
+Generated: 2026-04-30T20:49:48.041Z
+Total Errors: 2
+================================================================================
+
+[LNK4081] (MSVC)
+espace disque insuffisant ; édition de liens non incrémentielle [C:\Users\ordi2430538\Documents\coding_project_flavortown\magnetic-sim\build\MAGNETIC_SIM.vcxproj]
+
+[LNK1108] (MSVC)
+impossible d'écrire le fichier à 0x50000 [C:\Users\ordi2430538\Documents\coding_project_flavortown\magnetic-sim\build\MAGNETIC_SIM.vcxproj]

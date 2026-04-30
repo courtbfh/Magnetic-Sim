@@ -4,6 +4,12 @@
     <ClCompile Include="C:\Users\ordi2430538\Documents\coding_project_flavortown\magnetic-sim\src\main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="C:\Users\ordi2430538\Documents\coding_project_flavortown\magnetic-sim\src\Particle.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\ordi2430538\Documents\coding_project_flavortown\magnetic-sim\src\MagneticField.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <CustomBuild Include="C:\Users\ordi2430538\Documents\coding_project_flavortown\magnetic-sim\CMakeLists.txt" />
