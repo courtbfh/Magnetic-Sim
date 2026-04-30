@@ -17,5 +17,10 @@ Using parameters such as the distance between the magnet and the `Visualization 
 
 ## Magnetism
 
-Magnetism is a property of materials, giving them the ability to attract or repel other materials. In this simulator, we study the `magnetic flux density` defined by this formula:  $$B = (u_0 * 2*m)/(4*pi * r^3)$$. To make it easy, it is the measurement of how big is the magnetic field is.
+Magnetism is a property of materials, giving them the ability to attract or repel other materials. In this simulator, we study the `magnetic flux density` defined by this formula: 
+```math
+B = (u_0 * 2*m)/(4*pi * r^3)
+```math
+
+To make it easy, it is the measurement of how big is the magnetic field is.
 
