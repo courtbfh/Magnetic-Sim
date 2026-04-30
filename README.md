@@ -27,9 +27,9 @@ To make it easy, it is the measurement of how big is the magnetic field is.
 
 ## Roadmap
 
-[x] Implementing Basic view in OpenGL
-[ ] Adding User Input
-[ ] Adding Measurement Cursor
+- [x] Implementing Basic view in OpenGL
+- [ ] Adding User Input
+- [ ] Adding Measurement Cursor
 
 ## Use
 
