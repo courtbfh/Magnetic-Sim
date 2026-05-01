@@ -58,11 +58,11 @@ glm::vec3 MagneticField::toColorGradient(float value, char gradient){
     return color;
 }; 
 
-float MagneticField::computeParticleMagnetic(glm::vec3 position){
+float MagneticField::computeParticleMagnetic(glm::vec3 position, MagneticFieldSettings settings){
     //Let firstly represent only the magnetic Strength without the materials propriety
 
-    float permeability = 4 *  M_PI * pow(10,-3);
-    float magneticMoment = 1.2f; // 1.2 Am^2 .
+    float permeability = 4 *  M_PI * pow(10,-7);
+    float magneticMoment = settings.magneticMoment; // 1.2 Am^2 .
 
     //Compute the magnetic Strength in a point
     float distance = abs(glm::length(position));

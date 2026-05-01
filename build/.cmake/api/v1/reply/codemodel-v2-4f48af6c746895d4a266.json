@@ -2102,7 +2102,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "MAGNETIC_SIM::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-MAGNETIC_SIM-Debug-4fd93d2f9545b4616d42.json",
+					"jsonFile" : "target-MAGNETIC_SIM-Debug-2880362e2ad848f12dbd.json",
 					"name" : "MAGNETIC_SIM",
 					"projectIndex" : 0
 				},
@@ -4216,7 +4216,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "MAGNETIC_SIM::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-MAGNETIC_SIM-Release-44b4a5b35b5628de8ac3.json",
+					"jsonFile" : "target-MAGNETIC_SIM-Release-a1540883066c0eb30403.json",
 					"name" : "MAGNETIC_SIM",
 					"projectIndex" : 0
 				},
@@ -6330,7 +6330,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "MAGNETIC_SIM::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-MAGNETIC_SIM-MinSizeRel-188b4d2f81775146dcb7.json",
+					"jsonFile" : "target-MAGNETIC_SIM-MinSizeRel-b93ab547131bede84493.json",
 					"name" : "MAGNETIC_SIM",
 					"projectIndex" : 0
 				},
@@ -8444,7 +8444,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "MAGNETIC_SIM::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-MAGNETIC_SIM-RelWithDebInfo-d73b07a075429ce43924.json",
+					"jsonFile" : "target-MAGNETIC_SIM-RelWithDebInfo-b42a62c53307a2e8ea29.json",
 					"name" : "MAGNETIC_SIM",
 					"projectIndex" : 0
 				},
@@ -8462,7 +8462,7 @@
 	"paths" : 
 	{
 		"build" : "C:/Users/ordi2430538/Documents/coding_project_flavortown/Magnetic-Sim/build",
-		"source" : "C:/Users/ordi2430538/Documents/coding_project_flavortown/Magnetic-Sim"
+		"source" : "C:/Users/ordi2430538/Documents/coding_project_flavortown/magnetic-sim"
 	},
 	"version" : 
 	{

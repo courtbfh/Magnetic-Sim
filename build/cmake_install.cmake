@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/ordi2430538/Documents/coding_project_flavortown/Magnetic-Sim
+# Install script for directory: C:/Users/ordi2430538/Documents/coding_project_flavortown/magnetic-sim
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

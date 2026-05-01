@@ -1199,7 +1199,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C:/Users/ordi2430538/Documents/coding_project_flavortown/Magnetic-Sim"
+			"value" : "C:/Users/ordi2430538/Documents/coding_project_flavortown/magnetic-sim"
 		},
 		{
 			"name" : "OpenCV_DIR",

@@ -1,12 +1,13 @@
 #include "Particle.hpp"
+#include "MagneticField.hpp"
 
 #include <cstdlib>
 #include <ctime>
 
 //TODO: Make particul more independent from magneticfield
-std::vector<float> Particle::SpreadAndSaveParticle(int n, char gradient, ParticleSettings settings){
+std::vector<float> Particle::SpreadAndSaveParticle(int n, char gradient, ParticleSettings settings,  MagneticFieldSettings Magnet_settings){
     MagneticField field = settings.field;
-    std::vector<glm::vec4> point =  createParticlePosition(n, settings);
+    std::vector<glm::vec4> point =  createParticlePosition(n, settings, Magnet_settings);
     field.logNormalization(point, n);
 
     std::vector<float> data;
@@ -27,7 +28,7 @@ std::vector<float> Particle::SpreadAndSaveParticle(int n, char gradient, Particl
 };
 
 
-std::vector<glm::vec4> Particle::createParticlePosition(int n, ParticleSettings settings){
+std::vector<glm::vec4> Particle::createParticlePosition(int n, ParticleSettings settings, MagneticFieldSettings Magnet_settings){
     srand(time(0));
     float x;
     float y;
@@ -36,7 +37,7 @@ std::vector<glm::vec4> Particle::createParticlePosition(int n, ParticleSettings 
     for (int i=0; i<n; ++i) {   
         x = ((double)rand() / RAND_MAX) * (5.0f - (-5.0f)) + (-5.0f);
         y = ((double)rand() / RAND_MAX) * (5.0f - (-5.0f)) + (-5.0f);
-        float magneticValue = settings.field.computeParticleMagnetic(glm::vec3(x, y, 0.0f));
+        float magneticValue = settings.field.computeParticleMagnetic(glm::vec3(x, y, 0.0f), Magnet_settings);
 
         points.push_back(glm::vec4(x, y, 0.0f, magneticValue));
     };

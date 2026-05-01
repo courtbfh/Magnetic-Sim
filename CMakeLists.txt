@@ -18,6 +18,7 @@ add_executable(MAGNETIC_SIM
     src/main.cpp
     src/Particle.cpp
     src/MagneticField.cpp
+    src/Cursor.cpp
 
 )
 

@@ -11,6 +11,6 @@ class Particle {
     public:
         Particle() = default;
         std::vector<float> createParticle();
-        std::vector<glm::vec4> createParticlePosition(int n, ParticleSettings settings);
-        std::vector<float> SpreadAndSaveParticle(int n, char gradient, ParticleSettings settings);
+        std::vector<glm::vec4> createParticlePosition(int n, ParticleSettings settings, MagneticFieldSettings Magnet_settings);
+        std::vector<float> SpreadAndSaveParticle(int n, char gradient, ParticleSettings settings, MagneticFieldSettings Magnet_settings);
 };

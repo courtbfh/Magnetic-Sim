@@ -1,13 +1,11 @@
 #include "Cursor.hpp"
 
 
-double Cursor::getCoords(){
+glm::vec3 Cursor::getCoords(GLFWwindow* window){
     double xpos, ypos;
     //getting cursor position
     glfwGetCursorPos(window, &xpos, &ypos);
-    return xpos, ypos;
+    return glm::vec3(xpos, ypos, 0.0f);
 }
 
-float getValue(std::vector<glm::vec4> points, float x, float y){
-    if(point[])
-}
+// How can we get the position relative to our projection ??

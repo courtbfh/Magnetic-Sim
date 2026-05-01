@@ -1,6 +1,6 @@
-^C:\USERS\ORDI2430538\DOCUMENTS\CODING_PROJECT_FLAVORTOWN\MAGNETIC-SIM\BUILD\CMAKEFILES\1D9D792759A2437F79D487E056769949\GENERATE.STAMP.RULE
+^C:\USERS\ORDI2430538\DOCUMENTS\CODING_PROJECT_FLAVORTOWN\MAGNETIC-SIM\BUILD\CMAKEFILES\554771ACD56C725537D2DE6BF541BCA5\GENERATE.STAMP.RULE
 setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/ordi2430538/Documents/coding_project_flavortown/magnetic-sim -BC:/Users/ordi2430538/Documents/coding_project_flavortown/magnetic-sim/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/ordi2430538/Documents/coding_project_flavortown/magnetic-sim/build/MagneticSim.sln
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/ordi2430538/Documents/coding_project_flavortown/magnetic-sim -BC:/Users/ordi2430538/Documents/coding_project_flavortown/Magnetic-Sim/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/ordi2430538/Documents/coding_project_flavortown/Magnetic-Sim/build/MagneticSim.sln
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone

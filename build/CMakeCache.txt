@@ -207,7 +207,7 @@ MagneticSim_BINARY_DIR:STATIC=C:/Users/ordi2430538/Documents/coding_project_flav
 MagneticSim_IS_TOP_LEVEL:STATIC=ON
 
 //Value Computed by CMake
-MagneticSim_SOURCE_DIR:STATIC=C:/Users/ordi2430538/Documents/coding_project_flavortown/Magnetic-Sim
+MagneticSim_SOURCE_DIR:STATIC=C:/Users/ordi2430538/Documents/coding_project_flavortown/magnetic-sim
 
 //The directory containing a CMake configuration file for OpenCV.
 OpenCV_DIR:PATH=C:/vcpkg/installed/x64-windows/share/opencv4

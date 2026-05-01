@@ -13,12 +13,12 @@
 #include <math.h>
 #include <stdlib.h>
 #include <cstdlib>
-#include <winuser.h>
 
 //include our lib 
 
 #include "Particle.hpp"
 #include "MagneticField.hpp"
+#include "Cursor.hpp"
 
 
 # define M_PI           3.14159265358979323846 
@@ -250,9 +250,37 @@ int main(){
     ParticleSettings PSettings;
     PSettings.field = field;
 
+    MagneticFieldSettings MSettings;
+
     Particle ObjParticle;
         
     std::vector<float> particle = ObjParticle.createParticle();
+
+    Cursor cursor;
+
+    // User input space
+
+    std::cout << R"(
+            ░███     ░███                                                ░██               
+        ░████   ░████                                                ░██               
+        ░██░██ ░██░██  ░██████    ░████████ ░████████   ░███████  ░████████  ░███████  
+        ░██ ░████ ░██       ░██  ░██    ░██ ░██    ░██ ░██    ░██    ░██    ░██    ░██ 
+        ░██  ░██  ░██  ░███████  ░██    ░██ ░██    ░██ ░█████████    ░██    ░██    ░██ 
+        ░██       ░██ ░██   ░██  ░██   ░███ ░██    ░██ ░██           ░██    ░██    ░██ 
+        ░██       ░██  ░█████░██  ░█████░██ ░██    ░██  ░███████      ░████  ░███████  
+                                        ░██                                            
+                                ░███████                                             
+                                                                                    
+    )";
+
+    std::cout << "What is the magnetic moment of your magnet (1200 recommended) ?\n";
+    std::cout << "> ";
+    std::cin >> MSettings.magneticMoment ;
+
+    int countParticle = 500000;
+    std::cout << "How many ploting particle do you want (500000 recommanded) ?\n";
+    std::cout << "> ";
+    std::cin >> countParticle ;
 
 
     //init glfw and window
@@ -398,7 +426,7 @@ int main(){
 
 
     // Get the particle data 
-    std::vector<float> particlesData = ObjParticle.SpreadAndSaveParticle(500000 , 'v', PSettings);
+    std::vector<float> particlesData = ObjParticle.SpreadAndSaveParticle(countParticle , 'v', PSettings, MSettings);
 
 
     // We forget about this data organisation, it isn't great 
@@ -481,7 +509,7 @@ int main(){
             // spreadParticle(10000,VBO, particle, shaderProgram, model);
 
 
-
+            //std::cout << "Cursor Position: " << cursor.getCoords(window).x << ", " << cursor.getCoords(window).y << std::endl;
 
 
 
