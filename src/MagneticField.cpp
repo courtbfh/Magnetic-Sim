@@ -54,6 +54,8 @@ glm::vec3 MagneticField::toColorGradient(float value, char gradient){
 
     if( gradient == 'v'){
         color = glm::mix(glm::vec3(0.26,0.0,0.32), glm::vec3(1.0,1.0,0.15), value);
+    } else if (gradient == 'b') {
+        color = glm::vec3(value, 0.53f, 0.74f);
     }
     return color;
 }; 
@@ -63,14 +65,19 @@ float MagneticField::computeParticleMagnetic(glm::vec3 position, MagneticFieldSe
 
     float permeability = 4 *  M_PI * pow(10,-7);
     float magneticMoment = settings.magneticMoment; // 1.2 Am^2 .
+    float magnetic_strength = 0.0f;
 
-    //Compute the magnetic Strength in a point
-    float distance = abs(glm::length(position));
-    
-    // Prevent division by zero
-    if (distance < 0.1f) distance = 0.1f; 
+    for (int i = 0; i< settings.MagnetCenters.size(); i++){
+        //Compute the magnetic Strength in a point
+        glm::vec3 temp = settings.MagnetCenters[i]; 
+        float distance = abs(sqrt(pow((position.x - temp.x),2)+pow((position.y - temp.y),2)+pow((position.z - temp.z),2)));
+        // Prevent division by zero
+        if (distance < 0.1f) distance = 0.1f; 
 
-    // B = (u0 * 2m)/(4pi * r^3)
-    return (permeability * 2 * magneticMoment) / (4.0f * M_PI * pow(distance,3));
+        // B = (u0 * 2m)/(4pi * r^3)
+        magnetic_strength += (permeability * 2 * magneticMoment) / (4.0f * M_PI * pow(distance,3));
+    }
+
+    return magnetic_strength;
 
 };

@@ -4,6 +4,7 @@
 
 struct MagneticFieldSettings {
     float magneticMoment;
+    std::vector<glm::vec3> MagnetCenters;
 };
 
 class MagneticField {

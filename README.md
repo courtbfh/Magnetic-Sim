@@ -33,4 +33,6 @@ To make it easy, it is the measurement of how big is the magnetic field is.
 
 ## Use
 
-Without any user input, just download the release and take a look to the result!
+- Then you have to enter the number of points that will be plotted (ex: 500000);
+- Then you have to enter the number of points that will be plotted (e.g., 500000);
+- Finally, you can add the center coordinates of your magnet. Enter them without spaces, like this: (`0.0,0.0,0.0`). You can enter as many coordinates as you want. When you have finished, type `s`, and you will see your simulation.

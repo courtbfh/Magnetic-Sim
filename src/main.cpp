@@ -282,6 +282,35 @@ int main(){
     std::cout << "> ";
     std::cin >> countParticle ;
 
+    bool finished = false;
+    while (!finished){
+        std::cout << "What is the center coordinate of your magnet ? (0.0,0.0,0.0)";
+        std::cout << " (s = stop )> ";
+        std::string out;
+        std::cin >> out;
+        if (out == "s"){
+            finished = true;
+        } else {
+            stringstream ss(out);
+        
+            string t;
+            std::vector<float> temp;
+            // Delimiter
+            char del = ',';
+            // Splitting the str string 
+            // by delimiter
+            while (getline(ss, t, del))
+            {
+                temp.push_back(std::stof(t));
+                std::cout << std::stof(t) << '\n';
+            }
+            MSettings.MagnetCenters.push_back(glm::vec3(temp[0], temp[1], temp[2]));
+        }
+    };
+        
+
+    //MSettings.MagnetCenters = {glm::vec3(-1.0, 0.0f,0.0f), glm::vec3(1.0, 0.0f,0.0f)};
+
 
     //init glfw and window
 
@@ -423,6 +452,7 @@ int main(){
     // ============
     // Static Mode 
     // ============
+
 
 
     // Get the particle data 
